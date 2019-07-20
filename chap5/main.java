@@ -10,10 +10,27 @@ public class Main{
         retA(); // 戻り値を必ずしも変数で受け取る必要はない
 
         // オーバーロードの利用（仮引数が異なれば，同じメソッド名でも複数の定義が可能）
-        System.out.println(add(10, 20));
-        System.out.println(add(3.5, 2.7));
-        System.out.println(add("hello, ", "world!"));
-        System.out.println(add(10, 20, 30));
+        // System.out.println(add(10, 20));
+        // System.out.println(add(3.5, 2.7));
+        // System.out.println(add("hello, ", "world!"));
+        // System.out.println(add(10, 20, 30));
+
+        // 引数や戻り値に配列をとる場合
+        int [] array = {1, 2, 10};
+        printArray(array);
+        // for (int element : array){
+        //     System.out.println(element);
+        //     // element++;
+        // }
+
+        int[] array_ = makeArray(3); // arrayを再定義しようとしたら怒られた
+        showArray(array_);
+    }
+
+    public static void showArray(int[] array){
+        for(int element : array){
+            System.out.println(element);
+        }
     }
 
     // 名前を表示するメソッド
@@ -46,6 +63,27 @@ public class Main{
     // 引数の数が違う場合のオーバーロードがある
     public static int add(int x, int y, int z){
         return x + y + z; 
+    }
+
+    // 引数に配列をとる
+    // 参照渡し
+    public static void printArray(int[] array){
+        // for (int element : array){
+        //     System.out.println(element);
+        // }
+        for (int i = 0; i<array.length; i++){
+            array[i]++;
+        }
+    }
+
+    // 戻りが配列
+    public static int[] makeArray(int size){
+        int[] newArray = new int[size];
+        for (int i=0; i<size; i++){
+            newArray[i] = i;
+        }
+
+        return newArray;
     }
 
 }
