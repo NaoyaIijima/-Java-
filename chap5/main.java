@@ -1,5 +1,6 @@
 public class Main{
     public static void main(String[] args){
+        
         // テーマ：メソッド
         // hello("naoya");
         // add(10, 20); // 豆知識：渡す引数は実引数，受け取る引数を仮引数という
@@ -25,6 +26,10 @@ public class Main{
 
         int[] array_ = makeArray(3); // arrayを再定義しようとしたら怒られた
         showArray(array_);
+
+        // コマンドライン引数
+        // System.out.println(args[0]); // cmdで「java main.java hello」と打つと，helloと表示される
+
     }
 
     public static void showArray(int[] array){
