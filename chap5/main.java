@@ -13,6 +13,7 @@ public class Main{
         System.out.println(add(10, 20));
         System.out.println(add(3.5, 2.7));
         System.out.println(add("hello, ", "world!"));
+        System.out.println(add(10, 20, 30));
     }
 
     // 名前を表示するメソッド
@@ -40,6 +41,11 @@ public class Main{
     }
     public static String add(String x, String y){
         return x + y;
+    }
+
+    // 引数の数が違う場合のオーバーロードがある
+    public static int add(int x, int y, int z){
+        return x + y + z; 
     }
 
 }
