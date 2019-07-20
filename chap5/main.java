@@ -5,6 +5,9 @@ public class Main{
         add(10, 20); // 豆知識：渡す引数は実引数，受け取る引数を仮引数
 
         int i = 0; // ローカル変数
+
+        System.out.println(retA());
+        retA(); // 戻り値を必ずしも変数で受け取る必要はない
     }
 
     // 名前を表示するメソッド
@@ -17,6 +20,12 @@ public class Main{
         int i; // mainメソッド内のiとは別の変数
         int ans = n1 + n2; // ローカル変数
         System.out.println(ans);
+    }
+
+    // 戻り値の利用
+    public static String retA(){
+        return "naoya!!!";
+        // int i = 0; // コンパイルエラー
     }
 
 }
