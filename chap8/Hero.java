@@ -3,7 +3,6 @@ public class Hero{
     String name;
     int hp = 10;
 
-    
     void sleep(){
         this.hp = 100;
         System.out.println(this.name + " is sleeping and recover Hit Point!!!");

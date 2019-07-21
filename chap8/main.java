@@ -4,7 +4,7 @@ public class Main{
         Hero h = new Hero();
 
         // Set initial values of fields
-        h.namae = "Minato";
+        h.name = "Minato";
         h.hp = 100;
         System.out.println("Hero " + h.name + "is generated!");
 
