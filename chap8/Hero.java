@@ -1,13 +1,11 @@
 public class Hero{
 
-    // 属性
     String name;
     int hp = 10;
 
     
-    // 以下，操作の定義
     void sleep(){
-        this.hp == 100;
+        this.hp = 100;
         System.out.println(this.name + " is sleeping and recover Hit Point!!!");
     }
 
