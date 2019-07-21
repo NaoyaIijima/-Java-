@@ -15,6 +15,5 @@ public class Main{
         int total = CalcLogic.tasu(a, b);
         System.out.println("added: " + total +  ", subbed: " + delta);
         // CalcLogic.hiku(a, b);
-
     }
 }
