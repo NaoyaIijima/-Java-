@@ -6,29 +6,26 @@ public class Main{
         s.damage = 10;
 
         // Generate Hero instance
-        Hero h = new Hero();
+        Hero h1 = new Hero();
         // Set initial values of fields
-        h.name = "Minato";
-        h.hp = 100;
-        h.sword = s;
-        System.out.println("Current atack object is " + h.sword.name);
+        h1.name = "Minato";
+        h1.hp = 100;
+        h1.sword = s;
+        // System.out.println("Current atack object is " + h.sword.name);
 
-        // Matango m1 = new Matango();
-        // m1.hp = 50;
-        // m1.suffix = 'A';
+        Hero h2 = new Hero();
+        h2.name = "asaka";
+        h2.hp = 100;
+        
+        // Wizard instance
+        Wizard w = new Wizard();
+        w.name = "sugawara";
+        w.hp = 50;
+        w.heal(h1);
+        w.heal(h2);
+        w.heal(h2);
 
-        // Matango m2 = new Matango();
-        // m2.hp = 48;
-        // m2.suffix = 'B';
-
-        // // Call methods
-        // // h.sit(5);
-
-        // m1.run();
-        // m2.run();
-
-        // h.slip();
-        // // h.sit(25);
-        // h.run();
+        System.out.println(h1.name + "\'s HP is " + h1.hp);
+        System.out.println(h2.name + "\'s HP is " + h2.hp);
     }
 }
