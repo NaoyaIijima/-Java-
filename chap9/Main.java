@@ -1,12 +1,17 @@
 public class Main{
     public static void main(String[] args){
+
+        Sword s = new Sword();
+        s.name = "fire sword";
+        s.damage = 10;
+
         // Generate Hero instance
         Hero h = new Hero();
-
         // Set initial values of fields
         h.name = "Minato";
         h.hp = 100;
-        // System.out.println("Hero " + h.name + "is generated!");
+        h.sword = s;
+        System.out.println("Current atack object is " + h.sword.name);
 
         // Matango m1 = new Matango();
         // m1.hp = 50;
