@@ -35,4 +35,10 @@ public class Hero{
         this.hp = 100;
         this.name = name;
     }
+
+    // Overload of constractor
+    Hero(){
+        this.hp = 100;
+        this.name = "dummy";
+    }
 }
