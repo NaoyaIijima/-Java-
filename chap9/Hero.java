@@ -30,12 +30,14 @@ public class Hero{
         System.out.println("Final HP is " + this.hp);
     }
 
+
     // constractor
     Hero(String name){
         this.hp = 100;
         this.name = name;
     }
 
+    
     // Overload of constractor
     Hero(){
         this.hp = 100;
