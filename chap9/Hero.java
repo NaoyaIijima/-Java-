@@ -31,7 +31,8 @@ public class Hero{
     }
 
     // constractor
-    Hero(){
+    Hero(String name){
         this.hp = 100;
+        this.name = name;
     }
 }

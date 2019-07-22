@@ -6,10 +6,11 @@ public class Main{
         // s.damage = 10;
 
         // Generate Hero instance
-        Hero h1 = new Hero();
+        Hero h1 = new Hero("Minato"); // name = "Minato"はエラー
         // Set initial values of fields
-        h1.name = "Minato";
+        // h1.name = "Minato";
         System.out.println("HP is " + h1.hp);
+        System.out.println("Name is " + h1.name);
         // h1.hp = 100;
         // h1.sword = s;
         // System.out.println("Current atack object is " + h.sword.name);
