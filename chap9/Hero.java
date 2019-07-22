@@ -29,4 +29,9 @@ public class Hero{
         System.out.println("GAMEOVER!!!!!!!!!!!!!!!!");
         System.out.println("Final HP is " + this.hp);
     }
+
+    // constractor
+    Hero(){
+        this.hp = 100;
+    }
 }
