@@ -6,6 +6,13 @@ public class Hero{
 
     static int money; // USING static!!!
 
+    // static method
+    static void setRandomMoney(){
+        Hero.money = (int) (Math.random() * 1000);
+        // compile error because no instance exist 
+        // System.out.println(this.name + " is initialized money..."); 
+    }
+
     void sleep(){
         this.hp = 100;
         System.out.println(this.name + " is sleeping and recover Hit Point!!!");
