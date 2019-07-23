@@ -15,9 +15,12 @@ public class Main{
         // h1.sword = s;
         // System.out.println("Current atack object is " + h.sword.name);
 
-        // Hero h2 = new Hero();
+        Hero h2 = new Hero();
         // h2.name = "asaka";
         // h2.hp = 100;
+
+        System.out.println(h1.hp);
+        System.out.println(Hero.money); // h1.moneyも同じ意味．また，インスタンス生成しなくても参照可能
         
         // // Wizard instance
         // Wizard w = new Wizard();
