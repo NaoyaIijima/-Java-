@@ -10,5 +10,7 @@ public class SuperHero extends Hero{
         System.out.println("landing.");
     }
 
-    
+    public void run(){
+        System.out.println("tettai.");
+    }
 }
