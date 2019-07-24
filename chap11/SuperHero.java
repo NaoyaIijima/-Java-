@@ -13,4 +13,12 @@ public class SuperHero extends Hero{
     public void run(){
         System.out.println("tettai.");
     }
+
+    public void attack(Matango m){
+        super.attack(m);
+        if(this.flying){
+            super.attack(m);
+        }
+    }
+
 }

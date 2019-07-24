@@ -1,5 +1,5 @@
 public class Matango{
-    int hp;
+    int hp = 30;
     final int LEVEL = 10;
     char suffix;
 

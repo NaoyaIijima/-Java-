@@ -1,4 +1,5 @@
 public class Hero{
+    
     private String name = "Minato";
     private int hp = 100;
 
@@ -11,4 +12,5 @@ public class Hero{
     public void run(){
         System.out.println(this.name + " is running.");
     }
+
 }

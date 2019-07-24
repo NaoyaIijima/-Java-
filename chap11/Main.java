@@ -4,5 +4,8 @@ public class Main{
         h.run();
         SuperHero sh = new SuperHero();
         sh.run();
+
+        Matango m = new Matango();
+        sh.attack(m);
     }
 }
