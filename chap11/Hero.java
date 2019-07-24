@@ -1,7 +1,11 @@
 public class Hero{
-    
+
     private String name = "Minato";
     private int hp = 100;
+
+    public Hero(){
+        System.out.println("Hero's constructor is running.");
+    }
 
     public void attack(Matango m){
         System.out.println(this.name + " attack!!!");
